@@ -108,6 +108,7 @@ export {
   Permission,
   Club,
   Event,
+  EventParticipant,
   Achievement,
   AuditLog,
   Notification,
