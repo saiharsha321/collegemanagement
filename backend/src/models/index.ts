@@ -70,6 +70,11 @@ Club.hasMany(Event, { foreignKey: 'club_id', as: 'events' });
 // Event relationships
 Event.belongsTo(Club, { foreignKey: 'club_id', as: 'club' });
 Event.belongsTo(User, { foreignKey: 'created_by', as: 'creator' });
+Event.hasMany(EventParticipant, { foreignKey: 'event_id', as: 'participants' });
+
+// EventParticipant relationships
+EventParticipant.belongsTo(Event, { foreignKey: 'event_id', as: 'event' });
+EventParticipant.belongsTo(Student, { foreignKey: 'student_id', as: 'student' });
 
 // Achievement relationships
 Achievement.belongsTo(Student, { foreignKey: 'student_id', as: 'student' });
