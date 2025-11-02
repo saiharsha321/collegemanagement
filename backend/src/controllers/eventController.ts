@@ -1,5 +1,5 @@
 import { Response } from 'express';
-import { Event, Club, Student, EventParticipant, User, Permission } from '@/models';
+import { Event, Club, Student, EventParticipant, User } from '@/models';
 import { AppError } from '@/middleware/errorHandler';
 import { AuthenticatedRequest } from '@/middleware/auth';
 import { asyncHandler } from '@/middleware/errorHandler';
