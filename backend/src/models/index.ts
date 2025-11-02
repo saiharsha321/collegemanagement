@@ -9,6 +9,7 @@ import Attendance from './Attendance';
 import Permission from './Permission';
 import Club from './Club';
 import Event from './Event';
+import EventParticipant from './EventParticipant';
 import Achievement from './Achievement';
 import AuditLog from './AuditLog';
 import Notification from './Notification';
