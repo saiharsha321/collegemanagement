@@ -3,7 +3,8 @@ import { Club, Department, User, Event } from '@/models';
 import { AppError } from '@/middleware/errorHandler';
 import { AuthenticatedRequest } from '@/middleware/auth';
 import { asyncHandler } from '@/middleware/errorHandler';
-import { Op } from 'sequelize';
+import { Op, Sequelize } from 'sequelize';
+import sequelize from '@/config/database';
 
 // Get all clubs
 export const getClubs = asyncHandler(async (req: AuthenticatedRequest, res: Response) => {
