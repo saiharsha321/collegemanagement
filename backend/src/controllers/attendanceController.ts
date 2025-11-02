@@ -1,10 +1,9 @@
 import { Response } from 'express';
-import { Attendance, Class, Student, Subject, Faculty, Permission } from '@/models';
+import { Attendance, Class, Student, Subject, Faculty, Permission, User } from '@/models';
 import { AppError } from '@/middleware/errorHandler';
 import { AuthenticatedRequest } from '@/middleware/auth';
 import { asyncHandler } from '@/middleware/errorHandler';
-import { Op, Sequelize } from 'sequelize';
-import { QueryTypes } from 'sequelize';
+import { Op, Sequelize, QueryTypes } from 'sequelize';
 
 // Get faculty's class schedule
 export const getFacultyClasses = asyncHandler(async (req: AuthenticatedRequest, res: Response) => {
